@@ -32,4 +32,6 @@ function [W, Phi, metrics] = JointOptimization(Prms, Channel)
             break;
         end
     end
+    
+    W = OptimizeBeamforming(Prms, Channel, Phi); % 参数传递正确
 end

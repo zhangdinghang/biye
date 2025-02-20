@@ -23,4 +23,7 @@ function Prms = SystemParameters()
     %% 优化控制参数
     Prms.max_iter = 50;         % 最大交替优化次数
     Prms.tol = 1e-4;            % 收敛判断阈值
+
+    %% 新增优化惩罚参数
+    Prms.penalty_weight = 1e6;  % 松弛变量惩罚系数
 end
